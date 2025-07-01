@@ -55,6 +55,10 @@ void test1(){
     Person p1;
     Person p2 = Person(10);
     Person p3 = Person(p2);
+
+    // 3、隐式转换法
+    Person p4 = 10;       /* 相当于写了 Person p4 = Person(10) */
+    Person p5 = p4;       /* 拷贝函数 */
 }
 
 int main(){
